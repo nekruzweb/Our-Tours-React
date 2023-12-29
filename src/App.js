@@ -1,20 +1,18 @@
 import React from 'react';
-import Data from './data';
-import Tour from './Tour';
 import './App.css';
+import Rewievs from './Rewievs';
+import Data from './data';
 
 
 function App() {
     return(
         <main>
-            <section>
+            <section className='container'>
                 <div className='title'>
-                    <h2>Our Tours</h2>
+                    <h2>Our Reviews</h2>
                     <div className='underline'></div>
                 </div>
-                <div className='tours'>
-                    <Tour Mal={Data} />
-                </div>
+                <Rewievs MAL={Data} />
             </section>
         </main>
     )
